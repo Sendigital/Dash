@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #0b052d;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #303545;
+}
+
+#container{
+    border-radius: 25px;
+    border: 2px solid black;
+    background-color: #fff;
+    height: 90vh;
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+aside{
+    border-right: 2px solid rgb(228, 228, 228);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+aside>h1{
+    font-size: 18px;
+}
+
+.profile{
+    /* border: 2px solid; */
+    margin: block;
+    text-align: center;
+}
+.profile>img{
+    border-top: 5px solid goldenrod;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.profile>h3{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+    margin-block: .2rem;
+}
+
+.profile>span{
+    border-radius: 30%;
+    box-shadow: .1rem .1rem 4rem black;
+    padding: .2rem .4rem;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.navItems{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    /* border: 2px solid red; */
+}
+.navItems>a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 14px;
+}
+.navItems>a:first-child{
+    font-weight: 700;
+}
+
+.community{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.community>p{
+    font-size: 10px;
+    text-align: center;
+    width: 120px;
+    font-weight: 700;
+    margin-top: .4rem;
+    line-height: 12px;
+}
+
+.communityPictures{
+    display: flex;
+    align-items: end;
+}
+
+.communityPictures>img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.communityPictures>img:first-child{
+    width: 20px;
+    height: 20px;
+}
+.communityPictures>span{
+    background-color: goldenrod;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    border-radius: 100%;
+    padding: .3rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styling for main */
+main{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    /* border: 2px solid; */
+    padding: 0 3rem;
+}
+
+.financialBreakdown{
+    flex: 1;
+    /* border: 2px solid red; */
+}
+
+#dashHeader{
+    display: flex;
+    gap: 3rem;
+    /* justify-content: space-between; */
+    /* border: 2px solid red; */
+}
+
+.dash{
+    /* border: 2px solid green; */
+    /* width: 350px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashInfo>h1{
+    font-weight: 500;
+    color: #0b052d;
+}
+.dashInfo>p{
+    font-size: 11px;
+    color: rgb(126, 126, 126);
+    padding: .3rem;
+}
+
+.dashIcons{
+    display: flex;
+    margin-bottom: 1.8rem;
+    /* align-items: center; */
+    gap: 5px;
+    color: #0b052d;
+}
+.dashIcons>i{
+    font-size: 13px;
+}
+
+.financials{
+    /* border: 2px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem .3rem;
+}
+.revenue{
+    display: flex;
+    align-items: center;
+}
+
+.expenses{
+    display: flex;
+    align-items: center;
+}
+
+.incomeIcon{
+    /* border: 2px solid; */
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(222, 220, 220);
+    width: 40px;
+    height: 40px;
+    margin-right: .5rem;
+}
+.incomeIcon>i{
+    margin: auto;
+    font-size: 18px;
+    color: #0b052d;
+    transform: rotate(90deg);
+}
+
+.expensesIcon{
+    /* border: 2px solid; */
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(222, 220, 220);
+    width: 40px;
+    height: 40px;
+    margin-right: .5rem;
+}
+.expensesIcon>i{
+    margin: auto;
+    font-size: 18px;
+    color: #0b052d;
+    transform: rotate(270deg);
+}
+
+.figures>h5{
+    font-size: 10px;
+    color: rgb(126, 126, 126);
+    font-weight: 400;
+}
+.figures>p{
+    font-weight: 700;
+    color: #0b052d;
+}
+
+.premiumCard{
+    flex: 1;
+    /* border: 2px solid blue; */
+    height: 150px;
+}
+.premiumCard>img{
+    width: 100%;
+    /* height: 145px; */
+    height: 100%;
+    border-radius: 15px;
+    /* object-fit: cover; */
+}
+
+/* styling for second section */
+
+#statistics{
+    display: flex;
+    gap: 3rem;
+    /* border: 2px solid green; */
+}
+
+.hoursSpent{
+    flex: 1;
+    /* border: 2px solid blue; */
+}
+.hoursSpent>h3{
+    font-size: 15px;
+    font-weight: 400;
+}
+.hoursSpent>img{
+    width: 100%;
+}
+
+.schedule{
+    /* border: 2px solid red; */
+    flex: 1;
+}
+
+.schedTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.schedTitle>h3{
+    font-size: 15px;
+    font-weight: 400;
+}
+.schedTitle>a{
+    text-decoration: none;
+    color: rgb(126, 126, 126);
+    font-size: 10px;
+}
+
+.schedLine{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.schedLine>p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1.5px solid rgb(126, 126, 126);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    /* text-align: center; */
+}
+
+.schedInfo>span{
+    font-size: 8px;
+    color: rgb(126, 126, 126);
+    margin-right: 2rem;
+}
+.schedInfo>h6{
+    font-weight: 500;
+}
+
+.footer{
+    /* border: 2px solid red; */
+    background-color: #ecebf0;
+    display: flex;
+    padding: 2rem 0 2rem 1rem;
+    gap: 1rem;
+}
+
+.channelCardWrapper{
+    /* border: 2px solid blue; */
+    display: flex;
+    position: relative;
+    flex: 1;
+    gap: 1rem;
+}
+
+.footerChannels{
+    width: 20%;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    /* margin: 2rem; */
+}
+
+.footerChannels>h4{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.footerChannels>p{
+    font-size: 12px;
+    width: 100px;
+}
+
+.channelCard{
+    /* border: 2px solid green; */
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color:#fff;
+    padding-bottom: 3rem;
+    border-radius: 15px;
+}
+
+.channelLastCard{
+    width: 90px;
+    height: 100px;
+    background-color: #fff;
+    padding-bottom: 3rem;
+    border-radius: 15px;
+    right: -2.8rem;
+    padding: 1rem;
+    position: absolute;
+    background-color: #7059a5;
+}
+
+.channelLastCard>h2{
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.channelLastCard>span{
+    background-color: #fff;
+    color: #303545;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: .6rem;
+}
+
+/* .channelCard:last-child{
+    right: -3rem;
+    padding: 1rem;
+    position: absolute;
+    background-color: #7059a5;
+    width: 90px;
+} */
+
+.channelCard:last-child>h2{
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.channelCard:last-child>span{
+    background-color: #fff;
+    color: #303545;
+}
+
+.channelCard>span{
+    background-color: #303545;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 35%;
+    top: -1rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 14px;
+}
+
+.channelCard>h4{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 1.5rem;
+}
+
+.channelCard>p{
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: .4rem;
+    opacity: .5;
+}
+
+.channelCard>h1{
+    text-align: center;
+    font-size: 18px;
+}
+
+.channelCard>span>i{
+    color: #fff;
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+}
